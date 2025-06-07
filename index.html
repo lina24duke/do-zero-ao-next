@@ -19,9 +19,10 @@
 <body>
     <h1>Contadores</h1>
     <p></p>
-    <button>total 0</button>
+    <button onclick="adicionar()"></button>
     <script>
         
+        var numero = 0
 
         function adicionar() {
             numero++
@@ -29,7 +30,7 @@
         }
 
         function render(){
-            document.querySelector("button").innerText = numero;
+            document.querySelector("button").innerText = `TOTAL ${numero}`;
         }
         render()
     </script>
