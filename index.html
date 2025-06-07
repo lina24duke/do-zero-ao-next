@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lina</title>
+    <style>
+        button{
+            height: 100px;
+            width: 100px;
+        }
+    </style>
 </head>
 <body>
     <h1>Lina contador</h1>
-    <p>0</p>
+    
     <button onclick="adicionar()"></button>
-    <scrpt>
-        let numero = 0
+    <script>
+        var numero = 0
 
         function adicionar() {
-            numero++;
-            render();
+            numero++
+            render()
         }
 
-    </scrpt>
+        function render(){
+            document.querySelector("button").innerText = numero;
+        }
+        render()
+    </script>
 </body>
 </html>
